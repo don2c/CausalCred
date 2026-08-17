@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "base_configuration": {
+    "credential_count": 3,
+    "delegation_depth": 2,
+    "policy_clauses": 16,
+    "events": 100,
+    "issuer_threshold": 1,
+    "attester_threshold": 1,
+    "revocation_threshold": 1
+  },
+  "ligetron": {
+    "code_rate": "1/4",
+    "repetitions": 137,
+    "soundness_bits": 96,
+    "hash_queries_max": 264,
+    "prover_threads": 8,
+    "repetitions_168": {
+      "soundness_bits_lower_bound": 118,
+      "proof_mib": 5.94,
+      "verify_seconds": 0.46,
+      "prove_seconds": "n.m."
+    }
+  },
+  "instruction_components_million": {
+    "credentials": 55.2,
+    "delegation": 29.4,
+    "attestation": 19.1,
+    "state_and_receipts": 62.8,
+    "policy": 24.3,
+    "revocation": 17.5
+  },
+  "bound_terms": {
+    "zk": {"base_bits": 96, "multiplicity": 1},
+    "ml_dsa": {"base_bits": 128, "multiplicity": 12},
+    "commitments": {"base_bits": 192, "multiplicity": 14},
+    "hashes": {"base_bits": 192, "multiplicity": 96}
+  },
+  "cryptographic_suite": {
+    "signatures": "ML-DSA-65",
+    "key_establishment": "ML-KEM-768",
+    "commitments": "SHAKE256/384",
+    "symmetric_authentication": "KMAC256",
+    "proof_system": "Ligetron"
+  }
+}

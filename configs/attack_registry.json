@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "families": [
+    {"group": "G1", "id": "A1", "name": "Direct prompt injection", "primary_control": "C3"},
+    {"group": "G1", "id": "A2", "name": "Indirect retrieval injection", "primary_control": "C3"},
+    {"group": "G1", "id": "A3", "name": "Malicious tool output", "primary_control": "C3"},
+    {"group": "G1", "id": "A4", "name": "Compromised subagent", "primary_control": "C3"},
+    {"group": "G1", "id": "A5", "name": "Provenance omission", "primary_control": "C3"},
+    {"group": "G1", "id": "A6", "name": "Event reordering", "primary_control": "C3"},
+    {"group": "G2", "id": "A7", "name": "Credential amalgamation", "primary_control": "C1"},
+    {"group": "G2", "id": "A8", "name": "False two-agent independence", "primary_control": "C1"},
+    {"group": "G2", "id": "A9", "name": "Delegation widening", "primary_control": "C1"},
+    {"group": "G3", "id": "A10", "name": "Request substitution", "primary_control": "C5"},
+    {"group": "G3", "id": "A11", "name": "Replay", "primary_control": "C2"},
+    {"group": "G3", "id": "A12", "name": "Stale attestation or revocation", "primary_control": "C6"},
+    {"group": "G3", "id": "A13", "name": "Suite downgrade", "primary_control": "C7"}
+  ],
+  "pre_registered_trial_count_per_family_per_testbed": 250,
+  "effect_success_required": true
+}

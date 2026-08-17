@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "seed": "causalcred-asiaccs-2027-confirmatory",
+  "source_date_epoch": 1786966469,
+  "testbeds": ["cloud", "supply_chain"],
+  "attack_groups": {
+    "G1": ["A1", "A2", "A3", "A4", "A5", "A6"],
+    "G2": ["A7", "A8", "A9"],
+    "G3": ["A10", "A11", "A12", "A13"]
+  },
+  "trials_per_family_per_testbed": 250,
+  "baseline_cloud": {
+    "B0": {
+      "name": "Workload identity + ABAC [21]",
+      "G1": {"successes": 1184, "trials": 1500},
+      "G2": "n/a",
+      "G3": {"successes": 712, "trials": 1000}
+    },
+    "B1": {
+      "name": "StatefulAuth [1]",
+      "G1": "n/a",
+      "G2": "n/a",
+      "G3": {"successes": 124, "trials": 1000}
+    },
+    "B2": {
+      "name": "Anonymous credentials [16]",
+      "G1": "n/a",
+      "G2": {"successes": 215, "trials": 750},
+      "G3": {"successes": 668, "trials": 1000}
+    },
+    "B3": {
+      "name": "SAGA [18]",
+      "G1": {"successes": 543, "trials": 1500},
+      "G2": {"successes": 161, "trials": 750},
+      "G3": {"successes": 186, "trials": 1000}
+    },
+    "B4": {
+      "name": "ACE [9]",
+      "G1": "n.m.",
+      "G2": "n/a",
+      "G3": "n/a"
+    },
+    "B5": {
+      "name": "Signed plaintext trace",
+      "G1": {"successes": 672, "trials": 1500},
+      "G2": "n/a",
+      "G3": {"successes": 403, "trials": 1000}
+    },
+    "B6": {
+      "name": "CausalCred",
+      "G1": {"successes": 0, "trials": 1500},
+      "G2": {"successes": 0, "trials": 750},
+      "G3": {"successes": 0, "trials": 1000}
+    }
+  },
+  "supply_chain": {
+    "causalcred": {
+      "G1": {"successes": 0, "trials": 1500},
+      "G2": {"successes": 0, "trials": 750},
+      "G3": {"successes": 0, "trials": 1000}
+    },
+    "speranza_digest_subset": {"successes": 241, "trials": 250},
+    "causalcred_digest_subset": {"successes": 0, "trials": 250}
+  },
+  "ablations": {
+    "C0": {"removed": "None, full CausalCred", "successes": 0, "trials": 3250},
+    "C1": {"removed": "Root binding, P_root (M2)", "successes": 391, "trials": 3250},
+    "C2": {"removed": "Nonce-fresh head (M1)", "successes": 320, "trials": 3250},
+    "C3": {"removed": "Integrity propagation (M3)", "successes": 734, "trials": 3250},
+    "C4": {"removed": "Endorsement checking (M4)", "successes": 159, "trials": 3250},
+    "C5": {"removed": "Exact-action binding, H(q) in x", "successes": 349, "trials": 3250},
+    "C6": {"removed": "Current revocation, RevOK", "successes": 270, "trials": 3250},
+    "C7": {"removed": "Suite binding, suiteID", "successes": 189, "trials": 3250}
+  },
+  "ablation_decomposition": {
+    "C2": {"replay": 224, "stale_prefix": 96},
+    "C5": {"request_substitution": 231, "fresh_nonce_replay": 118}
+  },
+  "utility": {
+    "trials": 6500,
+    "initial_false_denials": 401,
+    "final_false_denials": 119
+  },
+  "injection": {
+    "trials": 3000,
+    "model_followed": 1842
+  },
+  "a5_correction": {
+    "trials": 500,
+    "pre_correction_successes": 4,
+    "post_correction_successes": 0
+  },
+  "privacy": {
+    "presentations": 40000,
+    "positive_class": 20000,
+    "unadjusted_high_signal_positives": 5640,
+    "padded_high_signal_positives": 480,
+    "padding_overhead_fraction": 0.146,
+    "padding_buckets_mib": [5, 6, 9, 24],
+    "policy_anonymity_sets": [1, 2, 4, 450, 800, 1100, 1500, 1842, 1842, 1950, 2200, 2600, 3100, 4200, 5800, 7400]
+  },
+  "performance_claims": {
+    "proof_transfer_path_mbit_s": 80,
+    "low_bandwidth_path_mbit_s": 10,
+    "low_bandwidth_transfer_seconds": 4.05,
+    "proving_latency_share_percent": 87.3,
+    "transfer_latency_share_percent": 5.3,
+    "event_throughput_per_second": 2380,
+    "head_throughput_per_second": 1640,
+    "compacted_state_instructions_million": 128.3,
+    "soundness_137_bits": 96,
+    "composed_authorization_bits": 95.9,
+    "soundness_168_bits": 118,
+    "soundness_168_proof_mib": 5.94,
+    "soundness_168_verify_seconds": 0.46,
+    "soundness_168_prove_seconds": "n.m."
+  },
+  "reference_execution": {
+    "seed": "causalcred-reference-execution-v1",
+    "model_identifier": "deterministic-policy-agent-v1",
+    "decoding": {
+      "temperature": 0,
+      "top_p": 1,
+      "sampling": false
+    },
+    "testbeds": ["cloud", "supply_chain"],
+    "trials_per_family_per_testbed": 250,
+    "injection_attempt_probability": 0.614,
+    "bootstrap_iterations": 2000
+  }
+}

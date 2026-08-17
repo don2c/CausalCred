@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "policy_id": "causal-abac-evaluation-v1",
+  "decision": "Permit_P AND Safe_P",
+  "relation_controls": {
+    "C1": {"name": "root_binding", "conjunct": "PrincipalOK and P_root"},
+    "C2": {"name": "nonce_fresh_head", "conjunct": "Fresh(x) and Unused(nu)"},
+    "C3": {"name": "integrity_propagation", "conjunct": "OpenState and TransitionsOK and Safe_P"},
+    "C4": {"name": "endorsement_checking", "conjunct": "EndorsementOK"},
+    "C5": {"name": "exact_action_binding", "conjunct": "Bind and H(q)"},
+    "C6": {"name": "current_revocation", "conjunct": "RootBundleOK and RevOK"},
+    "C7": {"name": "suite_binding", "conjunct": "Bind and suiteID"}
+  },
+  "binding_fields": [
+    "task identifier",
+    "request hash",
+    "policy hash",
+    "monitor head",
+    "root bundle",
+    "context",
+    "scoped pseudonym",
+    "suite identifier"
+  ],
+  "delegation_constraints": ["scope", "purpose", "depth", "expiry", "action intersection"],
+  "freshness_constraints": ["gateway nonce", "policy epoch", "revocation epoch", "attestation epoch"],
+  "provenance_constraints": ["complete parent set", "integrity meet", "receipt chain", "validator-parent completeness"]
+}
