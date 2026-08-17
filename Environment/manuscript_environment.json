@@ -1,0 +1,17 @@
+{
+  "cpu": "AMD EPYC 7543",
+  "cpu_cores": 32,
+  "cpu_frequency_ghz": 2.8,
+  "liboqs": "0.10.1",
+  "linux_kernel": "5.15.0-116",
+  "memory_gib": 256,
+  "operating_system": "Ubuntu 22.04.4 LTS",
+  "prover_threads": 8,
+  "rust": "1.79.0 with fat LTO",
+  "single_threaded_stages": [
+    "verification",
+    "monitor processing",
+    "head generation"
+  ],
+  "evidence_class": "manuscript_summary"
+}

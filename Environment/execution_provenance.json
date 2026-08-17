@@ -1,0 +1,172 @@
+{
+  "artifact_scope": "executable Causal-ABAC reference evaluation",
+  "execution": {
+    "decoding": {
+      "sampling": false,
+      "temperature": 0,
+      "top_p": 1
+    },
+    "model_identifier": "deterministic-policy-agent-v1",
+    "provider": "local-deterministic",
+    "seed": "causalcred-reference-execution-v1",
+    "testbeds": [
+      "cloud",
+      "supply_chain"
+    ],
+    "trials_per_family_per_testbed": 250
+  },
+  "runtime": {
+    "implementation": "CPython",
+    "machine": "x86_64",
+    "platform": "Linux-6.18.35-x86_64-with-glibc2.39",
+    "python": "3.12.13"
+  },
+  "schema_version": 1,
+  "source": {
+    "algorithm": "sha256",
+    "files": [
+      {
+        "path": ".github/workflows/reproduce.yml",
+        "sha256": "50f0fc41c2de0e57a241d0cd32b4ed634b49f3e382ebb8c2912530b947b458c9"
+      },
+      {
+        "path": "ARTIFACT.md",
+        "sha256": "9408c1a781e5df0fb2e6ea342bd84d1150d16d96229929dcd0d6366891e43ed1"
+      },
+      {
+        "path": "Dockerfile",
+        "sha256": "69af27a09e57d6865f099dfd44e45710993a9c633e3d4e051b1c501e76298af8"
+      },
+      {
+        "path": "LICENSE",
+        "sha256": "ad0b7eec455b1ad184071ed8c8b20ee84ea2af942d394fddef89c60436a11122"
+      },
+      {
+        "path": "Makefile",
+        "sha256": "32edb1395b2bdf1ba57076d85aed60ff69d649dd6e0cc40fc7c9370022210aae"
+      },
+      {
+        "path": "README.md",
+        "sha256": "dd4856579565fc0dca6c8f6ac9d476b7a685ac513143a6b19dfaf8bf54d0454e"
+      },
+      {
+        "path": "configs/attack_registry.json",
+        "sha256": "c42adfc9b4e51ecf89693c1763bc7f04bcb9635bc94188b31a8a104f92465df1"
+      },
+      {
+        "path": "configs/evaluation.json",
+        "sha256": "18f4f1084a76be9a31e24ec6d64c8c3c5f398b52d6a8beebcf4cda9a2a6499f5"
+      },
+      {
+        "path": "configs/policy.json",
+        "sha256": "5a51785858df3b001fd57e247cbde686c9b94866069966990a92f0c9734f5994"
+      },
+      {
+        "path": "configs/proof.json",
+        "sha256": "55519cc4437899951cca792701b19c8ab42b2c78487690f0c31e282f15ccded9"
+      },
+      {
+        "path": "configs/testbeds.json",
+        "sha256": "90f2393cbb18c87d13e66dee0aef617ff6f9db29d75e236076079267fbf19e9f"
+      },
+      {
+        "path": "docs/METHODOLOGY.md",
+        "sha256": "ad4f08ee605d36a8dec869ebed4864bdc21ee53e524ef427a595e2c7c7d6a604"
+      },
+      {
+        "path": "pyproject.toml",
+        "sha256": "7686fd5086040c0fd54266e9e9eaa562608c3c0cb68e82dcaf07cd1787b84592"
+      },
+      {
+        "path": "schemas/execution_provenance.schema.json",
+        "sha256": "19f218b16633a7540d42657179ce030282aa8d5f450324ab2410799c4a7305a0"
+      },
+      {
+        "path": "schemas/protocol_trial.schema.json",
+        "sha256": "d57768d528f4a9b706a2d111851085e6a96d7ef20ee159f9cbdbc91951b2b6c6"
+      },
+      {
+        "path": "scripts/build_artifact_guide.py",
+        "sha256": "4824a0de4939217f207f3b6307e9d242dec59e76f5cdf8487919917b65ab28e2"
+      },
+      {
+        "path": "scripts/build_release.py",
+        "sha256": "c428f7cf89290ab26d4b46babfd1993f9579ebecf1392155f2c3539f778fe9ef"
+      },
+      {
+        "path": "scripts/reproduce.py",
+        "sha256": "77f3c29b91472bf37c6591f3a3d01e14a0f940f5f74ad9c6f08241c841e3fda8"
+      },
+      {
+        "path": "scripts/verify_reproduction.py",
+        "sha256": "842276d62bc3413a7e920200d17447b8a9f3c6ee1cb7b68251677f5be8359aa3"
+      },
+      {
+        "path": "src/causalcred_eval/__init__.py",
+        "sha256": "8fbfc1ad8bded863556fb95b63eb4da45604678f96497f3168d1d7fbd7bc8ff9"
+      },
+      {
+        "path": "src/causalcred_eval/__main__.py",
+        "sha256": "0f7d54f3fbb1f79a85eb8110f11793db99da6f3c61ee979de5abe9a1b5f3fdb3"
+      },
+      {
+        "path": "src/causalcred_eval/cli.py",
+        "sha256": "ee9154b80b10f48e6c22839b096aea70b003277bbec0bf966e35f15e299e9f0c"
+      },
+      {
+        "path": "src/causalcred_eval/experiments.py",
+        "sha256": "0eaa81897636b4891619d501063cebc06788ae8c6a21ca60132baaab48c0c446"
+      },
+      {
+        "path": "src/causalcred_eval/generate.py",
+        "sha256": "5871ff1fa4de59e7e3b392a22269ee4b4e8abd57af0cd2ff038eb3b9f175b15a"
+      },
+      {
+        "path": "src/causalcred_eval/index.py",
+        "sha256": "1e183c6cb11bb68fc01cd405e0d0cc97e56a9207fa125480a62d7df35b9d5eeb"
+      },
+      {
+        "path": "src/causalcred_eval/metrics.py",
+        "sha256": "eb2fe2e74401064cb99a5a4408adbb69f8f8a65fecc305b33a85e65fabf17903"
+      },
+      {
+        "path": "src/causalcred_eval/model.py",
+        "sha256": "f174f9ee4e157271e8e7a404a7557f5f7e0a33832ad8682a6d467fd64acfa9c5"
+      },
+      {
+        "path": "src/causalcred_eval/protocol.py",
+        "sha256": "d0da3b8e81f6fff471c9ec42a5cb4425ed0a939232af9e2ffcf4ea0efdae7b22"
+      },
+      {
+        "path": "src/causalcred_eval/stats.py",
+        "sha256": "2bc2ae3c6f221b2fd851c1e5ea846352b821054a4ac41844de363b14cbe89e3a"
+      },
+      {
+        "path": "src/causalcred_eval/tables.py",
+        "sha256": "15ca764567786e28e1a8d270e2030aae99cae53757122780344a824600fea4d7"
+      },
+      {
+        "path": "src/causalcred_eval/verify.py",
+        "sha256": "0d3bde7539979aca35188edf85f9549c8637538cbecdbf7be298006ba212c6fd"
+      },
+      {
+        "path": "tests/test_model.py",
+        "sha256": "505bed898699f9d4870d7b8bf74185e7708f6f8ee85ce667ce6f413ee330a1b0"
+      },
+      {
+        "path": "tests/test_pipeline.py",
+        "sha256": "ffd48aa146e6c1bd929b176ff6f0c67daf5124fcfacb62659e2e4501e5a295c8"
+      },
+      {
+        "path": "tests/test_protocol_runtime.py",
+        "sha256": "5733617a547a7fe71005d5cb72e4b7e0ae686d00f97bc5e2053c4d005c8e9d37"
+      },
+      {
+        "path": "tests/test_stats.py",
+        "sha256": "a8bce7f8e30580d1f26c4cfd430c839452ccb231612bca6c5688c699883fb07d"
+      }
+    ],
+    "source_file_count": 35,
+    "source_revision_sha256": "5033608262d5bb5c905305e457f6dfa9d1987c71e8d02da96c5af8b4e94e4f07"
+  }
+}
