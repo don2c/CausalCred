@@ -1,0 +1,1065 @@
+{
+  "checks": [
+    {
+      "expected": 6500,
+      "id": "trial-total",
+      "observed": 6500,
+      "pass": true
+    },
+    {
+      "expected": [
+        [
+          "G1",
+          "A1",
+          "Direct prompt injection",
+          "C3"
+        ],
+        [
+          "G1",
+          "A2",
+          "Indirect retrieval injection",
+          "C3"
+        ],
+        [
+          "G1",
+          "A3",
+          "Malicious tool output",
+          "C3"
+        ],
+        [
+          "G1",
+          "A4",
+          "Compromised subagent",
+          "C3"
+        ],
+        [
+          "G1",
+          "A5",
+          "Provenance omission",
+          "C3"
+        ],
+        [
+          "G1",
+          "A6",
+          "Event reordering",
+          "C3"
+        ],
+        [
+          "G2",
+          "A7",
+          "Credential amalgamation",
+          "C1"
+        ],
+        [
+          "G2",
+          "A8",
+          "False two-agent independence",
+          "C1"
+        ],
+        [
+          "G2",
+          "A9",
+          "Delegation widening",
+          "C1"
+        ],
+        [
+          "G3",
+          "A10",
+          "Request substitution",
+          "C5"
+        ],
+        [
+          "G3",
+          "A11",
+          "Replay",
+          "C2"
+        ],
+        [
+          "G3",
+          "A12",
+          "Stale attestation or revocation",
+          "C6"
+        ],
+        [
+          "G3",
+          "A13",
+          "Suite downgrade",
+          "C7"
+        ]
+      ],
+      "id": "attack-registry-model",
+      "observed": [
+        [
+          "G1",
+          "A1",
+          "Direct prompt injection",
+          "C3"
+        ],
+        [
+          "G1",
+          "A2",
+          "Indirect retrieval injection",
+          "C3"
+        ],
+        [
+          "G1",
+          "A3",
+          "Malicious tool output",
+          "C3"
+        ],
+        [
+          "G1",
+          "A4",
+          "Compromised subagent",
+          "C3"
+        ],
+        [
+          "G1",
+          "A5",
+          "Provenance omission",
+          "C3"
+        ],
+        [
+          "G1",
+          "A6",
+          "Event reordering",
+          "C3"
+        ],
+        [
+          "G2",
+          "A7",
+          "Credential amalgamation",
+          "C1"
+        ],
+        [
+          "G2",
+          "A8",
+          "False two-agent independence",
+          "C1"
+        ],
+        [
+          "G2",
+          "A9",
+          "Delegation widening",
+          "C1"
+        ],
+        [
+          "G3",
+          "A10",
+          "Request substitution",
+          "C5"
+        ],
+        [
+          "G3",
+          "A11",
+          "Replay",
+          "C2"
+        ],
+        [
+          "G3",
+          "A12",
+          "Stale attestation or revocation",
+          "C6"
+        ],
+        [
+          "G3",
+          "A13",
+          "Suite downgrade",
+          "C7"
+        ]
+      ],
+      "pass": true
+    },
+    {
+      "expected": 3250,
+      "id": "cloud-trial-total",
+      "observed": 3250,
+      "pass": true
+    },
+    {
+      "expected": 0,
+      "id": "cloud-effects",
+      "observed": 0,
+      "pass": true
+    },
+    {
+      "expected": 0.12,
+      "id": "cloud-wilson-upper",
+      "observed": 0.12,
+      "pass": true
+    },
+    {
+      "expected": {
+        "G1": 1500,
+        "G2": 750,
+        "G3": 1000
+      },
+      "id": "cloud-manifest-allocation",
+      "observed": {
+        "G1": 1500,
+        "G2": 750,
+        "G3": 1000
+      },
+      "pass": true
+    },
+    {
+      "expected": 1500,
+      "id": "cloud-G1-allocation",
+      "observed": 1500,
+      "pass": true
+    },
+    {
+      "expected": 750,
+      "id": "cloud-G2-allocation",
+      "observed": 750,
+      "pass": true
+    },
+    {
+      "expected": 1000,
+      "id": "cloud-G3-allocation",
+      "observed": 1000,
+      "pass": true
+    },
+    {
+      "expected": 3250,
+      "id": "supply_chain-trial-total",
+      "observed": 3250,
+      "pass": true
+    },
+    {
+      "expected": 0,
+      "id": "supply_chain-effects",
+      "observed": 0,
+      "pass": true
+    },
+    {
+      "expected": 0.12,
+      "id": "supply_chain-wilson-upper",
+      "observed": 0.12,
+      "pass": true
+    },
+    {
+      "expected": {
+        "G1": 1500,
+        "G2": 750,
+        "G3": 1000
+      },
+      "id": "supply_chain-manifest-allocation",
+      "observed": {
+        "G1": 1500,
+        "G2": 750,
+        "G3": 1000
+      },
+      "pass": true
+    },
+    {
+      "expected": 1500,
+      "id": "supply_chain-G1-allocation",
+      "observed": 1500,
+      "pass": true
+    },
+    {
+      "expected": 750,
+      "id": "supply_chain-G2-allocation",
+      "observed": 750,
+      "pass": true
+    },
+    {
+      "expected": 1000,
+      "id": "supply_chain-G3-allocation",
+      "observed": 1000,
+      "pass": true
+    },
+    {
+      "expected": 0,
+      "id": "overall-effects",
+      "observed": 0,
+      "pass": true
+    },
+    {
+      "expected": 26,
+      "id": "executed-record-file-count",
+      "observed": 26,
+      "pass": true
+    },
+    {
+      "expected": 6500,
+      "id": "executed-trial-total",
+      "observed": 6500,
+      "pass": true
+    },
+    {
+      "expected": 6500,
+      "id": "executed-record-total",
+      "observed": 6500,
+      "pass": true
+    },
+    {
+      "expected": 0,
+      "id": "executed-effects",
+      "observed": 0,
+      "pass": true
+    },
+    {
+      "expected": {
+        "cells": 26,
+        "counts": [
+          250
+        ]
+      },
+      "id": "executed-family-allocation",
+      "observed": {
+        "cells": 26,
+        "counts": [
+          250
+        ]
+      },
+      "pass": true
+    },
+    {
+      "expected": true,
+      "id": "executed-statement-digests",
+      "observed": true,
+      "pass": true
+    },
+    {
+      "expected": [
+        "executed_reference_runtime"
+      ],
+      "id": "executed-evidence-class",
+      "observed": [
+        "executed_reference_runtime"
+      ],
+      "pass": true
+    },
+    {
+      "expected": 6500,
+      "id": "executed-metrics-total",
+      "observed": 6500,
+      "pass": true
+    },
+    {
+      "expected": 0,
+      "id": "executed-metrics-effects",
+      "observed": 0,
+      "pass": true
+    },
+    {
+      "expected": "ordered two-value interval",
+      "id": "executed-cluster-bootstrap",
+      "observed": [
+        0.0,
+        0.0
+      ],
+      "pass": true
+    },
+    {
+      "expected": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5",
+        "C6",
+        "C7"
+      ],
+      "id": "executed-ablation-controls",
+      "observed": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5",
+        "C6",
+        "C7"
+      ],
+      "pass": true
+    },
+    {
+      "expected": 0,
+      "id": "executed-ablation-full-effects",
+      "observed": 0,
+      "pass": true
+    },
+    {
+      "expected": 3500,
+      "id": "executed-ablation-removed-effects",
+      "observed": 3500,
+      "pass": true
+    },
+    {
+      "expected": 0,
+      "id": "executed-reference-baseline-effects",
+      "observed": 0,
+      "pass": true
+    },
+    {
+      "expected": "> 0",
+      "id": "executed-weaker-baseline-effects",
+      "observed": 20275,
+      "pass": true
+    },
+    {
+      "expected": "64-character SHA-256",
+      "id": "source-revision",
+      "observed": "5033608262d5bb5c905305e457f6dfa9d1987c71e8d02da96c5af8b4e94e4f07",
+      "pass": true
+    },
+    {
+      "expected": "deterministic-policy-agent-v1",
+      "id": "model-identifier",
+      "observed": "deterministic-policy-agent-v1",
+      "pass": true
+    },
+    {
+      "expected": 100,
+      "id": "benchmark-sample-count",
+      "observed": 100,
+      "pass": true
+    },
+    {
+      "expected": true,
+      "id": "benchmark-samples-positive",
+      "observed": true,
+      "pass": true
+    },
+    {
+      "expected": 3000,
+      "id": "injection-trials",
+      "observed": 3000,
+      "pass": true
+    },
+    {
+      "expected": 1842,
+      "id": "injection-followed",
+      "observed": 1842,
+      "pass": true
+    },
+    {
+      "expected": 61.4,
+      "id": "injection-rate",
+      "observed": 61.4,
+      "pass": true
+    },
+    {
+      "expected": 0,
+      "id": "injection-effects",
+      "observed": 0,
+      "pass": true
+    },
+    {
+      "expected": 401,
+      "id": "utility-initial-denials",
+      "observed": 401,
+      "pass": true
+    },
+    {
+      "expected": 6.17,
+      "id": "utility-initial-fdr",
+      "observed": 6.17,
+      "pass": true
+    },
+    {
+      "expected": 93.8,
+      "id": "utility-initial-completion",
+      "observed": 93.8,
+      "pass": true
+    },
+    {
+      "expected": 119,
+      "id": "utility-final-denials",
+      "observed": 119,
+      "pass": true
+    },
+    {
+      "expected": 1.83,
+      "id": "utility-final-fdr",
+      "observed": 1.83,
+      "pass": true
+    },
+    {
+      "expected": 98.2,
+      "id": "utility-final-completion",
+      "observed": 98.2,
+      "pass": true
+    },
+    {
+      "expected": 4,
+      "id": "a5-pre-correction",
+      "observed": 4,
+      "pass": true
+    },
+    {
+      "expected": 0,
+      "id": "a5-corrected",
+      "observed": 0,
+      "pass": true
+    },
+    {
+      "expected": {
+        "successes": 1184,
+        "trials": 1500
+      },
+      "id": "baseline-B0-G1",
+      "observed": {
+        "successes": 1184,
+        "trials": 1500
+      },
+      "pass": true
+    },
+    {
+      "expected": {
+        "successes": 712,
+        "trials": 1000
+      },
+      "id": "baseline-B0-G3",
+      "observed": {
+        "successes": 712,
+        "trials": 1000
+      },
+      "pass": true
+    },
+    {
+      "expected": {
+        "successes": 124,
+        "trials": 1000
+      },
+      "id": "baseline-B1-G3",
+      "observed": {
+        "successes": 124,
+        "trials": 1000
+      },
+      "pass": true
+    },
+    {
+      "expected": {
+        "successes": 215,
+        "trials": 750
+      },
+      "id": "baseline-B2-G2",
+      "observed": {
+        "successes": 215,
+        "trials": 750
+      },
+      "pass": true
+    },
+    {
+      "expected": {
+        "successes": 668,
+        "trials": 1000
+      },
+      "id": "baseline-B2-G3",
+      "observed": {
+        "successes": 668,
+        "trials": 1000
+      },
+      "pass": true
+    },
+    {
+      "expected": {
+        "successes": 543,
+        "trials": 1500
+      },
+      "id": "baseline-B3-G1",
+      "observed": {
+        "successes": 543,
+        "trials": 1500
+      },
+      "pass": true
+    },
+    {
+      "expected": {
+        "successes": 161,
+        "trials": 750
+      },
+      "id": "baseline-B3-G2",
+      "observed": {
+        "successes": 161,
+        "trials": 750
+      },
+      "pass": true
+    },
+    {
+      "expected": {
+        "successes": 186,
+        "trials": 1000
+      },
+      "id": "baseline-B3-G3",
+      "observed": {
+        "successes": 186,
+        "trials": 1000
+      },
+      "pass": true
+    },
+    {
+      "expected": {
+        "successes": 672,
+        "trials": 1500
+      },
+      "id": "baseline-B5-G1",
+      "observed": {
+        "successes": 672,
+        "trials": 1500
+      },
+      "pass": true
+    },
+    {
+      "expected": {
+        "successes": 403,
+        "trials": 1000
+      },
+      "id": "baseline-B5-G3",
+      "observed": {
+        "successes": 403,
+        "trials": 1000
+      },
+      "pass": true
+    },
+    {
+      "expected": {
+        "successes": 0,
+        "trials": 1500
+      },
+      "id": "baseline-B6-G1",
+      "observed": {
+        "successes": 0,
+        "trials": 1500
+      },
+      "pass": true
+    },
+    {
+      "expected": {
+        "successes": 0,
+        "trials": 750
+      },
+      "id": "baseline-B6-G2",
+      "observed": {
+        "successes": 0,
+        "trials": 750
+      },
+      "pass": true
+    },
+    {
+      "expected": {
+        "successes": 0,
+        "trials": 1000
+      },
+      "id": "baseline-B6-G3",
+      "observed": {
+        "successes": 0,
+        "trials": 1000
+      },
+      "pass": true
+    },
+    {
+      "expected": {
+        "successes": 0,
+        "trials": 3250
+      },
+      "id": "ablation-C0",
+      "observed": {
+        "successes": 0,
+        "trials": 3250
+      },
+      "pass": true
+    },
+    {
+      "expected": {
+        "successes": 391,
+        "trials": 3250
+      },
+      "id": "ablation-C1",
+      "observed": {
+        "successes": 391,
+        "trials": 3250
+      },
+      "pass": true
+    },
+    {
+      "expected": {
+        "successes": 320,
+        "trials": 3250
+      },
+      "id": "ablation-C2",
+      "observed": {
+        "successes": 320,
+        "trials": 3250
+      },
+      "pass": true
+    },
+    {
+      "expected": {
+        "successes": 734,
+        "trials": 3250
+      },
+      "id": "ablation-C3",
+      "observed": {
+        "successes": 734,
+        "trials": 3250
+      },
+      "pass": true
+    },
+    {
+      "expected": {
+        "successes": 159,
+        "trials": 3250
+      },
+      "id": "ablation-C4",
+      "observed": {
+        "successes": 159,
+        "trials": 3250
+      },
+      "pass": true
+    },
+    {
+      "expected": {
+        "successes": 349,
+        "trials": 3250
+      },
+      "id": "ablation-C5",
+      "observed": {
+        "successes": 349,
+        "trials": 3250
+      },
+      "pass": true
+    },
+    {
+      "expected": {
+        "successes": 270,
+        "trials": 3250
+      },
+      "id": "ablation-C6",
+      "observed": {
+        "successes": 270,
+        "trials": 3250
+      },
+      "pass": true
+    },
+    {
+      "expected": {
+        "successes": 189,
+        "trials": 3250
+      },
+      "id": "ablation-C7",
+      "observed": {
+        "successes": 189,
+        "trials": 3250
+      },
+      "pass": true
+    },
+    {
+      "expected": 320,
+      "id": "ablation-C2-decomposition",
+      "observed": 320,
+      "pass": true
+    },
+    {
+      "expected": 349,
+      "id": "ablation-C5-decomposition",
+      "observed": 349,
+      "pass": true
+    },
+    {
+      "expected": [
+        241,
+        250
+      ],
+      "id": "speranza-digest",
+      "observed": [
+        241,
+        250
+      ],
+      "pass": true
+    },
+    {
+      "expected": [
+        0,
+        250
+      ],
+      "id": "causalcred-digest",
+      "observed": [
+        0,
+        250
+      ],
+      "pass": true
+    },
+    {
+      "expected": 40000,
+      "id": "privacy-presentations",
+      "observed": 40000,
+      "pass": true
+    },
+    {
+      "expected": 0.641,
+      "id": "privacy-auc",
+      "observed": 0.641,
+      "pass": true
+    },
+    {
+      "expected": 0.512,
+      "id": "privacy-padded-auc",
+      "observed": 0.512,
+      "pass": true
+    },
+    {
+      "expected": 14.6,
+      "id": "privacy-padding-overhead",
+      "observed": 14.6,
+      "pass": true
+    },
+    {
+      "expected": 16,
+      "id": "privacy-policy-count",
+      "observed": 16,
+      "pass": true
+    },
+    {
+      "expected": 1842,
+      "id": "privacy-median-set",
+      "observed": 1842.0,
+      "pass": true
+    },
+    {
+      "expected": 3,
+      "id": "privacy-small-sets",
+      "observed": 3,
+      "pass": true
+    },
+    {
+      "expected": 1,
+      "id": "privacy-minimum-set",
+      "observed": 1.0,
+      "pass": true
+    },
+    {
+      "expected": 208.3,
+      "id": "instruction-total",
+      "observed": 208.3,
+      "pass": true
+    },
+    {
+      "expected": [
+        26.5,
+        14.1,
+        9.2,
+        30.1,
+        11.7,
+        8.4
+      ],
+      "id": "instruction-shares",
+      "observed": [
+        26.5,
+        14.1,
+        9.2,
+        30.1,
+        11.7,
+        8.4
+      ],
+      "pass": true
+    },
+    {
+      "expected": 124.4,
+      "id": "mldsa-bound",
+      "observed": 124.4,
+      "pass": true
+    },
+    {
+      "expected": 188.2,
+      "id": "commitment-bound",
+      "observed": 188.2,
+      "pass": true
+    },
+    {
+      "expected": 185.4,
+      "id": "hash-bound",
+      "observed": 185.4,
+      "pass": true
+    },
+    {
+      "expected": "> 95.9 bits",
+      "id": "composed-bound",
+      "observed": 95.99999999596916,
+      "pass": true
+    },
+    {
+      "expected": 87.3,
+      "id": "cost-proving-share",
+      "observed": 87.3,
+      "pass": true
+    },
+    {
+      "expected": 5.3,
+      "id": "cost-transfer-share",
+      "observed": 5.3,
+      "pass": true
+    },
+    {
+      "expected": 4.05,
+      "id": "cost-transfer-10mbit",
+      "observed": 4.05,
+      "pass": true
+    },
+    {
+      "expected": 2380,
+      "id": "cost-event-throughput",
+      "observed": 2380,
+      "pass": true
+    },
+    {
+      "expected": 1640,
+      "id": "cost-head-throughput",
+      "observed": 1640,
+      "pass": true
+    },
+    {
+      "expected": 40.4,
+      "id": "scaling-base-rate",
+      "observed": 40.4,
+      "pass": true
+    },
+    {
+      "expected": 5.21,
+      "id": "scaling-credential-delta",
+      "observed": 5.210000000000001,
+      "pass": true
+    },
+    {
+      "expected": 4.15,
+      "id": "scaling-delegation-delta",
+      "observed": 4.15,
+      "pass": true
+    },
+    {
+      "expected": 3.43,
+      "id": "scaling-policy-delta",
+      "observed": 3.4299999999999997,
+      "pass": true
+    },
+    {
+      "expected": [
+        176.5,
+        22.13
+      ],
+      "id": "scaling-uncompacted-10000",
+      "observed": [
+        176.5,
+        22.13
+      ],
+      "pass": true
+    },
+    {
+      "expected": [
+        11.07,
+        5.54,
+        128.3
+      ],
+      "id": "scaling-compacted-10000",
+      "observed": [
+        11.07,
+        5.54,
+        128.3
+      ],
+      "pass": true
+    },
+    {
+      "expected": 13,
+      "id": "table-count",
+      "observed": 13,
+      "pass": true
+    },
+    {
+      "expected": [],
+      "id": "table-01-formats",
+      "observed": [],
+      "pass": true
+    },
+    {
+      "expected": [],
+      "id": "table-02-formats",
+      "observed": [],
+      "pass": true
+    },
+    {
+      "expected": [],
+      "id": "table-03-formats",
+      "observed": [],
+      "pass": true
+    },
+    {
+      "expected": [],
+      "id": "table-04-formats",
+      "observed": [],
+      "pass": true
+    },
+    {
+      "expected": [],
+      "id": "table-05-formats",
+      "observed": [],
+      "pass": true
+    },
+    {
+      "expected": [],
+      "id": "table-06-formats",
+      "observed": [],
+      "pass": true
+    },
+    {
+      "expected": [],
+      "id": "table-07-formats",
+      "observed": [],
+      "pass": true
+    },
+    {
+      "expected": [],
+      "id": "table-08-formats",
+      "observed": [],
+      "pass": true
+    },
+    {
+      "expected": [],
+      "id": "table-09-formats",
+      "observed": [],
+      "pass": true
+    },
+    {
+      "expected": [],
+      "id": "table-10-formats",
+      "observed": [],
+      "pass": true
+    },
+    {
+      "expected": [],
+      "id": "table-11-formats",
+      "observed": [],
+      "pass": true
+    },
+    {
+      "expected": [],
+      "id": "table-12-formats",
+      "observed": [],
+      "pass": true
+    },
+    {
+      "expected": [],
+      "id": "table-13-formats",
+      "observed": [],
+      "pass": true
+    },
+    {
+      "expected": true,
+      "id": "result-index",
+      "observed": true,
+      "pass": true
+    },
+    {
+      "expected": "5f6ab37b348a15c6e4129b73ec4c42fe04760808c72cdf2daa5ea20686049d40",
+      "id": "manuscript-sha256",
+      "observed": "5f6ab37b348a15c6e4129b73ec4c42fe04760808c72cdf2daa5ea20686049d40",
+      "pass": true
+    }
+  ],
+  "checks_failed": 0,
+  "checks_passed": 114,
+  "schema_version": 1,
+  "status": "PASS"
+}

@@ -1,0 +1,150 @@
+{
+  "a5_correction": {
+    "corrected": {
+      "successes": 0,
+      "trials": 500
+    },
+    "pre_correction": {
+      "successes": 4,
+      "trials": 500
+    }
+  },
+  "cost": {
+    "end_to_end_seconds": 9.65,
+    "event_throughput_per_second_nearest_10": 2380,
+    "head_throughput_per_second_nearest_10": 1640,
+    "proof_size_mib": 4.83,
+    "proving_seconds": 8.42,
+    "proving_share_percent": 87.25388601036269,
+    "transfer_seconds_10_mbit": 4.051697664,
+    "transfer_seconds_80_mbit_exact": 0.506462208,
+    "transfer_seconds_80_mbit_reported": 0.51,
+    "transfer_share_percent": 5.284974093264249
+  },
+  "evidence_boundary": {
+    "manuscript_derived_records": "deterministic_derivation_from_manuscript_summary",
+    "manuscript_measurements": "manuscript_summary",
+    "reference_execution": "executed_reference_runtime",
+    "reference_runtime_metrics": "results/executed/reference_metrics.json"
+  },
+  "injection": {
+    "model_followed": 1842,
+    "protected_effects": 0,
+    "rate_percent": 61.4,
+    "trials": 3000
+  },
+  "privacy": {
+    "auc_padded": 0.512,
+    "auc_unadjusted": 0.641,
+    "class_balance": {
+      "0": 20000,
+      "1": 20000
+    },
+    "mean_padding_overhead_percent": 14.600000003903563,
+    "median_anonymity_set": 1842.0,
+    "minimum_anonymity_set": 1.0,
+    "policies": 16,
+    "policies_at_most_four": 3,
+    "presentations": 40000
+  },
+  "scaling": {
+    "base_ms_per_million_instructions": 40.42246759481517,
+    "compacted_10000_proof_mib": 5.54,
+    "compacted_10000_proving_seconds": 11.07,
+    "compacted_state_instructions_million": 128.3,
+    "credential_range_proving_delta_seconds": 5.210000000000001,
+    "delegation_range_proving_delta_seconds": 4.15,
+    "events_10000_proof_mib": 22.13,
+    "events_10000_proving_seconds": 176.5,
+    "policy_range_proving_delta_seconds": 3.4299999999999997
+  },
+  "schema_version": 1,
+  "security": {
+    "groups": {
+      "cloud/G1": {
+        "successes": 0,
+        "trials": 1500,
+        "uer_ci_percent": "0.00 [0.00, 0.26]"
+      },
+      "cloud/G2": {
+        "successes": 0,
+        "trials": 750,
+        "uer_ci_percent": "0.00 [0.00, 0.51]"
+      },
+      "cloud/G3": {
+        "successes": 0,
+        "trials": 1000,
+        "uer_ci_percent": "0.00 [0.00, 0.38]"
+      },
+      "supply_chain/G1": {
+        "successes": 0,
+        "trials": 1500,
+        "uer_ci_percent": "0.00 [0.00, 0.26]"
+      },
+      "supply_chain/G2": {
+        "successes": 0,
+        "trials": 750,
+        "uer_ci_percent": "0.00 [0.00, 0.51]"
+      },
+      "supply_chain/G3": {
+        "successes": 0,
+        "trials": 1000,
+        "uer_ci_percent": "0.00 [0.00, 0.38]"
+      }
+    },
+    "overall": {
+      "successes": 0,
+      "trials": 6500,
+      "uer_percent": 0.0,
+      "wilson_95_percent": [
+        0.0,
+        0.05906662917497868
+      ]
+    },
+    "testbeds": {
+      "cloud": {
+        "successes": 0,
+        "trials": 3250,
+        "uer_percent": 0.0,
+        "wilson_95_percent": [
+          0.0,
+          0.11806352220710437
+        ]
+      },
+      "supply_chain": {
+        "successes": 0,
+        "trials": 3250,
+        "uer_percent": 0.0,
+        "wilson_95_percent": [
+          0.0,
+          0.11806352220710437
+        ]
+      }
+    }
+  },
+  "soundness": {
+    "commitment_union_bits": 188.1926450779424,
+    "composed_bits": 95.99999999596916,
+    "hash_union_bits": 185.41503749927884,
+    "instruction_shares_percent": [
+      26.500240038406144,
+      14.11425828132501,
+      9.169467114738358,
+      30.148823811809887,
+      11.665866538646183,
+      8.401344215074412
+    ],
+    "instruction_total_million": 208.3,
+    "mldsa_union_bits": 124.41503749927884,
+    "zk_bits": 96.0
+  },
+  "utility": {
+    "final_completion_percent": 98.16923076923077,
+    "final_false_denial_percent": 1.8307692307692307,
+    "final_false_denials": 119,
+    "initial_completion_percent": 93.83076923076923,
+    "initial_false_denial_percent": 6.1692307692307695,
+    "initial_false_denials": 401,
+    "trials": 6500
+  }
+}
