@@ -1,0 +1,17 @@
+policy_id,eligible_principals,rare_clearance_policy,evidence_class
+policy-01,1,true,manuscript_summary
+policy-02,2,false,manuscript_summary
+policy-03,4,false,manuscript_summary
+policy-04,450,false,manuscript_summary
+policy-05,800,false,manuscript_summary
+policy-06,1100,false,manuscript_summary
+policy-07,1500,false,manuscript_summary
+policy-08,1842,false,manuscript_summary
+policy-09,1842,false,manuscript_summary
+policy-10,1950,false,manuscript_summary
+policy-11,2200,false,manuscript_summary
+policy-12,2600,false,manuscript_summary
+policy-13,3100,false,manuscript_summary
+policy-14,4200,false,manuscript_summary
+policy-15,5800,false,manuscript_summary
+policy-16,7400,false,manuscript_summary
