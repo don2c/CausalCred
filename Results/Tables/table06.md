@@ -1,0 +1,7 @@
+# Table 6: Profile comparison at 137 Ligetron repetitions
+
+| Profile | N (M) | Prove (s) | Verify (s) | \|π\| (MiB) | Status |
+| --- | --- | --- | --- | --- | --- |
+| Ed25519 | 143.1 | 5.78 | n.m. | 4.00 | reported_summary |
+| ML-DSA-65 | 208.3 | 8.42 | 0.38 | 4.83 | reported_summary |
+| Hybrid | 273.5 | 11.06 | n.m. | 5.54 | reported_summary |

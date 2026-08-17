@@ -1,0 +1,11 @@
+# Table 10: Reported AI-agent and trial configuration
+
+| Item | Executed value | Status |
+| --- | --- | --- |
+| Model configuration | One immutable snapshot and fixed decoding parameters across both testbeds | identifier unavailable |
+| Implementation | One immutable commit; development runs excluded | commit identifier unavailable |
+| Attack allocation | 13 families; 250 trials per family and testbed | reported and checked |
+| Per-testbed groups | G1: 1,500; G2: 750; G3: 1,000 | reported and checked |
+| Trial totals | 3,250 per testbed; 6,500 overall | reported and checked |
+| Correction control | Full 6,500-trial suite rerun after the A5 correction | reported and modeled |
+| Microbenchmarks | 10 warm-ups and 100 measured runs | summary observations only |

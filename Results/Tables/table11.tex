@@ -1,0 +1,21 @@
+\begin{table*}[t]
+\centering
+\caption{Compiled WASM instruction count and evaluated bound terms}
+\begin{tabular}{lllll}
+\hline
+Category & Component or term & Value & Share or bound & Status \\
+\hline
+Instructions & N\_cred (3 credentials) & 55.2 M & 26.5\% & reported\_summary \\
+Instructions & N\_del (2 edges) & 29.4 M & 14.1\% & reported\_summary \\
+Instructions & N\_att (1 attestation) & 19.1 M & 9.2\% & reported\_summary \\
+Instructions & N\_state (openings, transitions, receipts) & 62.8 M & 30.1\% & reported\_summary \\
+Instructions & N\_P (16 policy clauses) & 24.3 M & 11.7\% & reported\_summary \\
+Instructions & N\_rev (6 non-membership paths) & 17.5 M & 8.4\% & reported\_summary \\
+Instructions & N\_total & 208.3 M & 100\% & computed\_sum \\
+Bound & ZK extraction & Adv\_ZK^se-ks & <= 2^-96 & computed \\
+Bound & ML-DSA, N\_sigma = 12 & N\_sigma Adv\_MLDSA^euf-q & <= 2^-124.4 & computed \\
+Bound & Commitments, N\_C = 14 & N\_C Adv\_Com^qbind & <= 2^-188.2 & computed \\
+Bound & Hashes, N\_H = 96 & N\_H Adv\_H^qcoll & <= 2^-185.4 & computed \\
+\hline
+\end{tabular}
+\end{table*}

@@ -1,0 +1,10 @@
+# Table 7: Software-supply-chain attack results
+
+| Mechanism | Trial set | Observed/trials | Rate [95% CI] (%) |
+| --- | --- | --- | --- |
+| CausalCred | G1 (A1-A6) | 0/1500 | 0.00 [0.00, 0.26] |
+| CausalCred | G2 (A7-A9) | 0/750 | 0.00 [0.00, 0.51] |
+| CausalCred | G3 (A10-A13) | 0/1000 | 0.00 [0.00, 0.38] |
+| CausalCred | All A1-A13 | 0/3250 | 0.00 [0.00, 0.12] |
+| Speranza-style | Digest subset* | 241/250 | 96.40 [93.30, 98.09] |
+| CausalCred | Same subset | 0/250 | 0.00 [0.00, 1.51] |

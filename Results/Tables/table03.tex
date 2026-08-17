@@ -1,0 +1,18 @@
+\begin{table*}[t]
+\centering
+\caption{Concrete CausalCred-PQ profile}
+\begin{tabular}{ll}
+\hline
+Function & Instantiation \\
+\hline
+Issuer, attester, monitor, root signatures & ML-DSA-65 \\
+Authority collusion resistance & independent t\_Y-of-n\_Y ML-DSA signatures \\
+Task channel / optional capability key & ML-KEM-768 + KMAC256 KDF \\
+Commitments and event chain & SHAKE256 with 384-bit output, domain-separated \\
+Attributes and revocation & SHAKE256/384 Merkle / sparse-Merkle trees \\
+Scoped pseudonym & T\_c = KMAC256\_zα("nym" || c) \\
+Proof system & Ligetron transparent post-quantum ZK-SNARK \\
+Symmetric action authentication & KMAC256, optional profile only \\
+\hline
+\end{tabular}
+\end{table*}

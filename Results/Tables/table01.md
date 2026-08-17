@@ -1,0 +1,12 @@
+# Table 1: Positioning against the closest top-tier approaches
+
+| Approach | Hidden identity | Delegation | Stateful policy | Influence integrity | Exact-action binding | Remote ZK proof | PQ transcript privacy |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Conventional ABAC / Linux ABAC [21] | ✗ | △ | △ | ✗ | △ | ✗ | ✗ |
+| StatefulAuth [1] | ✗ | △ | ✓ | ✗ | ✓ | ✗ | ✗ |
+| Anonymous credentials [3, 15, 16] | ✓ | △ | △ | ✗ | △ | △ | ✗ |
+| FDAAC-CR [25] | ✓ | ✓ | △ | ✗ | △ | △ | ✗ |
+| ACE [9] | ✗ | △ | ✓ | ✓ | ✓ | ✗ | ✗ |
+| AttriGuard [7] | ✗ | ✗ | ✗ | ✓ | △ | ✗ | ✗ |
+| SAGA [18] | ✗ | ✓ | ✓ | △ | ✓ | ✗ | ✗ |
+| CausalCred | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |

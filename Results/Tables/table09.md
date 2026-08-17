@@ -1,0 +1,14 @@
+# Table 9: Conditional guarantees under compromise and collusion in proof-per-action mode
+
+| Compromise / collusion | Preserved | No longer guaranteed |
+| --- | --- | --- |
+| LLM, planner, or prover | proof soundness; identity privacy; exact-action verification | task correctness and utility |
+| External source, tool, or subagent | gateway-enforced integrity policy | factual correctness of that source |
+| Colluding holders / delegates | non-amalgamation and scope intersection | properties explicitly permitting collective witnesses |
+| Verifiers + honest-issuance logs | presentation anonymity and cross-context unlinkability under Equation (13) | network, action, timing, and policy-set anonymity |
+| Fewer than t_Y authorities | quorum authenticity and collusion resistance | availability if honest members refuse service |
+| At or above the threshold in one authority class | past ZK transcript privacy | future authenticity for that class (credentials, attestations, or roots) |
+| Monitor R corrupted before the challenged head | credential soundness and witness privacy | influence completeness, label integrity, monitor non-frameability |
+| Gateway G corrupted | cryptographic transcript validity and privacy | enforcement of the protected effect; MAC-profile non-frameability |
+| Current holder roots compromised | other principals' security; past untagged ZK privacy | future authentication; tagged-history unlinkability; delegation-key security |
+| Later break of classical branch | fully PQ public-transcript guarantees | classical-only profile and any public classical identifier |
