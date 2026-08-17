@@ -1,0 +1,31 @@
+name: reproduce
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  evaluation:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: sha256sum -c MANIFEST.sha256
+      - run: make verify
+      - uses: actions/upload-artifact@v4
+        with:
+          name: causalcred-results
+          path: |
+            ARTIFACT.md
+            RESULTS_INDEX.md
+            MANIFEST.sha256
+            data/executed/
+            data/manuscript_derived/
+            docs/CausalCred_Artifact_Guide.pdf
+            environment/
+            results/
+            schemas/
