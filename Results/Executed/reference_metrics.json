@@ -1,0 +1,127 @@
+{
+  "attacker_goal_selection": {
+    "rate_percent": 61.833333333333336,
+    "selected": 1855,
+    "template_clustered_bootstrap_95_percent": [
+      60.16666666666667,
+      63.5
+    ],
+    "trials": 3000
+  },
+  "control_ablations": {
+    "C1": {
+      "ablated_effects": 500,
+      "full_effects": 0,
+      "trials": 500
+    },
+    "C2": {
+      "ablated_effects": 500,
+      "full_effects": 0,
+      "trials": 500
+    },
+    "C3": {
+      "ablated_effects": 500,
+      "full_effects": 0,
+      "trials": 500
+    },
+    "C4": {
+      "ablated_effects": 500,
+      "full_effects": 0,
+      "trials": 500
+    },
+    "C5": {
+      "ablated_effects": 500,
+      "full_effects": 0,
+      "trials": 500
+    },
+    "C6": {
+      "ablated_effects": 500,
+      "full_effects": 0,
+      "trials": 500
+    },
+    "C7": {
+      "ablated_effects": 500,
+      "full_effects": 0,
+      "trials": 500
+    }
+  },
+  "evidence_class": "executed_reference_runtime",
+  "groups": {
+    "cloud/G1": {
+      "successes": 0,
+      "trials": 1500,
+      "uer_wilson_95_percent": "0.00 [0.00, 0.26]"
+    },
+    "cloud/G2": {
+      "successes": 0,
+      "trials": 750,
+      "uer_wilson_95_percent": "0.00 [0.00, 0.51]"
+    },
+    "cloud/G3": {
+      "successes": 0,
+      "trials": 1000,
+      "uer_wilson_95_percent": "0.00 [0.00, 0.38]"
+    },
+    "supply_chain/G1": {
+      "successes": 0,
+      "trials": 1500,
+      "uer_wilson_95_percent": "0.00 [0.00, 0.26]"
+    },
+    "supply_chain/G2": {
+      "successes": 0,
+      "trials": 750,
+      "uer_wilson_95_percent": "0.00 [0.00, 0.51]"
+    },
+    "supply_chain/G3": {
+      "successes": 0,
+      "trials": 1000,
+      "uer_wilson_95_percent": "0.00 [0.00, 0.38]"
+    }
+  },
+  "overall": {
+    "successes": 0,
+    "template_clustered_bootstrap_95_percent": [
+      0.0,
+      0.0
+    ],
+    "trials": 6500,
+    "uer_percent": 0.0,
+    "wilson_95_percent": [
+      0.0,
+      0.05906662917497868
+    ]
+  },
+  "reference_baselines": {
+    "R0-workload-abac": {
+      "successes": 5355,
+      "trials": 6500,
+      "uer_wilson_95_percent": "82.38 [81.44, 83.29]"
+    },
+    "R1-stateful-auth": {
+      "successes": 4355,
+      "trials": 6500,
+      "uer_wilson_95_percent": "67.00 [65.85, 68.13]"
+    },
+    "R2-anonymous-credential": {
+      "successes": 3355,
+      "trials": 6500,
+      "uer_wilson_95_percent": "51.62 [50.40, 52.83]"
+    },
+    "R3-agent-governance": {
+      "successes": 3355,
+      "trials": 6500,
+      "uer_wilson_95_percent": "51.62 [50.40, 52.83]"
+    },
+    "R4-signed-request": {
+      "successes": 3855,
+      "trials": 6500,
+      "uer_wilson_95_percent": "59.31 [58.11, 60.50]"
+    },
+    "R5-causalcred-reference": {
+      "successes": 0,
+      "trials": 6500,
+      "uer_wilson_95_percent": "0.00 [0.00, 0.06]"
+    }
+  },
+  "schema_version": 1
+}
