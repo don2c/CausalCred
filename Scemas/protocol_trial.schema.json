@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://causalcred.example/schemas/protocol_trial.schema.json",
+  "title": "CausalCred executed reference trial",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "trial",
+    "challenge",
+    "principal_roots",
+    "delegation",
+    "events",
+    "proven_request",
+    "forwarded_request",
+    "model",
+    "evidence_class"
+  ],
+  "properties": {
+    "schema_version": {"const": 1},
+    "evidence_class": {"const": "executed_reference_runtime"},
+    "trial": {
+      "type": "object",
+      "required": [
+        "trial_id",
+        "testbed",
+        "group",
+        "attack_id",
+        "template_id",
+        "monitor_decision",
+        "relation_decision",
+        "proof_result",
+        "gateway_decision",
+        "service_effect",
+        "statement_digest"
+      ]
+    },
+    "events": {"type": "array", "minItems": 3},
+    "model": {
+      "type": "object",
+      "required": ["provider", "identifier", "decoding"]
+    }
+  },
+  "additionalProperties": true
+}
